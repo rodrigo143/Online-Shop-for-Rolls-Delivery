@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+	<title>Доставка роллов</title>
+	<link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/social-colors.css">
+	<link rel="stylesheet" href="css/social.css">
+	<link rel="stylesheet" href="icons/css/all.css">
+	<link href="https://fonts.googleapis.com/css?family=Merriweather:300,400,400i,700&amp;subset=cyrillic-ext" rel="stylesheet">
+
+</head>
+
+<body>
+
+	<header class="header">
+		<div class="container text-center">
+			<img src="img/logo/logo.svg" width="92" alt="Суши и пицца">
+			<div class="display-4">Доставка роллов</div>
+			<p class="lead">Оперативно и вкусно</p>
+		</div>
+	</header>
+
+	<div class="container mb-5">
+		<div class="row">
+			<div class="col-md-8">
+				<div class="row" id="shopWindow">
+
+				</div>
+			</div>
+			<div class="col-md-4">
+
+				<!-- Корзина Пустая -->
+				<div class="card mb-4" id="emptyCart">
+					<div class="card-body">
+						<h5 class="card-title">Ваш заказ</h5>
+						<div class="alert alert-secondary" role="alert" data-items-number>
+							Корзина пуста
+						</div>
+					</div>
+				</div>
+				<!-- // Корзина Пустая -->
+
+				<!-- Корзина Полная -->
+				<div class="card" id="notEmptyCart">
+					<div class="card-body">
+
+						<div class="cart-total">
+							<h5 class="card-title border-bottom">Ваш заказ</h5>
+							<p><span class="h5">Доставка:</span> 
+								<span class="delivery-cost" data-delivery-cost>0</span>
+								<span class="roubleDelivery">BYN</span>
+							</p>
+							<p>
+								<span class="h5">Итого:</span>
+								<span class="total-price" data-total-price>0</span> 
+								<span class="rouble">BYN</span>
+							</p>
+						</div>
+
+						<div class="cart-wrapper" data-cart>
+
+						</div>
+						<!-- // cart-wrapper -->
+					</div>
+
+					<div class="card-body">
+						<h5 class="card-title">Оформить заказ</h5>
+						<form>
+							<div class="form-group">
+								<input type="text" class="form-control" placeholder="Ваш номер телефона">
+							</div>
+							<button type="submit" class="btn btn-primary">Заказать</button>
+						</form>
+
+
+					</div>
+				</div>
+				<!-- // Корзина Полная -->
+
+			</div>
+		</div>
+	</div>
+
+	<footer class="social-wrapper">
+		<div class="icon-box">
+			<a href="https://vk.com/id327021520" target="_blank" class="fa-stack fa-2x color-vk">
+				<i class="fas fa-circle fa-stack-2x"></i>
+				<i class="fab fa-vk fa-stack-1x fa-inverse"></i>
+			</a>
+		</div>
+
+		<div class="icon-box">
+			<a href="https://t.me/Filan0vichMaxim" target="_blank" class="fa-stack fa-2x color-tg">
+				<i class="fas fa-circle fa-stack-2x"></i>
+				<i class="fab fa-telegram-plane fa-stack-1x fa-inverse"></i>
+			</a>
+		</div>
+
+		<div class="icon-box">
+			<a href="https://twitter.com/8Z64Su3u8Rfe7gf" target="_blank" class="fa-stack fa-2x color-twitter">
+				<i class="fas fa-circle fa-stack-2x"></i>
+				<i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+			</a>
+		</div>
+
+		<div class="icon-box">
+			<a href="mailto:maxim_filanovich@mail.ru" target="_blank" class="fa-stack fa-2x color-mail">
+				<i class="fas fa-circle fa-stack-2x"></i>
+				<i class="fas fa-envelope fa-stack-1x fa-inverse"></i>
+			</a>
+		</div>
+
+		<div class="icon-box">
+			<a href="https://github.com/M-fil" target="_blank" class="fa-stack fa-2x color-github">
+				<i class="fas fa-circle fa-stack-2x"></i>
+				<i class="fab fa-github fa-stack-1x fa-inverse"></i>
+			</a>
+		</div>
+
+	</footer>
+	
+	<script src="js/Shop.js" defer></script>
+	<script src="js/Cart.js" defer></script>
+	<script src="js/Good.js" defer></script>
+	<script src="js/index.js" defer></script>
+
+</body>
+
+</html>
